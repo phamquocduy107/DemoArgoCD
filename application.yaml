@@ -6,13 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/phamquocduy107/DemoArgoCD.git'
+    repoURL: https://github.com/phamquocduy107/DemoArgoCD.git
     targetRevision: HEAD
     path: dev
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
     namespace: myapp
-
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
